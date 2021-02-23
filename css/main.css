@@ -17,6 +17,9 @@ body {
 }
 
 nav {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,5 +145,17 @@ nav .nav-active li {
   height: 3px;
   background-color: #FCFCFC;
   margin: 6px;
+}
+
+.bg {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100vh;
+  -webkit-clip-path: ellipse(86% 60% at 75% 18%);
+          clip-path: ellipse(86% 60% at 75% 18%);
+  background: #fe4600;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #fe4600), to(#fdbf50));
+  background: linear-gradient(180deg, #fe4600 10%, #fdbf50 100%);
 }
 /*# sourceMappingURL=main.css.map */

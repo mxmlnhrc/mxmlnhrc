@@ -33,6 +33,9 @@ body
         overflow-x: hidden
 
 nav
+    z-index: 1
+    position: fixed
+    width: 100%
     display: flex
     justify-content: space-around
     align-items: center
@@ -109,3 +112,12 @@ nav
     height: 3px
     background-color: $background
     margin: 6px
+
+.bg
+    position: absolute
+    z-index: -10
+    width: 100%
+    height: 100vh
+    clip-path: ellipse(86% 60% at 75% 18%)
+    background: rgb(254,70,0)
+    background: linear-gradient(180deg, rgba(254,70,0,1) 10%, rgba(253,191,80,1) 100%)
