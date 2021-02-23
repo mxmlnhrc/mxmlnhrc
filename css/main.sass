@@ -50,6 +50,10 @@ nav
         letter-spacing: 1px
         z-index: 1
 
+        a
+            color: $background
+            text-decoration: none
+
     .navbar
         display: flex
         justify-content: space-around
@@ -57,7 +61,7 @@ nav
         z-index: 0
 
         @include tablet
-            width: 50%
+            width: 60%
 
         @include desktop
             width: 30%
@@ -80,6 +84,10 @@ nav
             text-decoration: none
             font-weight: 500
             font-size: 18px
+            transition: text-decoration 0.2s ease-in-out
+
+            &:hover
+                text-decoration: underline $background
 
         li
             list-style: none
@@ -91,6 +99,16 @@ nav
 
         .active
             text-decoration: underline $background
+
+        .button
+            background-color: $background
+            color: $font
+            padding: 0.5em 1em
+            border-radius: 15px 0 15px 0
+            transition: border-radius 0.2s ease-in-out
+
+            &:hover
+                border-radius: 0 15px 0 15px
 
     .nav-active
         transform: translateX(0)
@@ -121,3 +139,32 @@ nav
     clip-path: ellipse(86% 60% at 75% 18%)
     background: rgb(254,70,0)
     background: linear-gradient(180deg, rgba(254,70,0,1) 10%, rgba(253,191,80,1) 100%)
+
+.hero
+    width: 45%
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    position: relative
+    top: 20vh
+    color: $background
+
+    h1
+        font-size: 60px
+        margin-bottom: 3rem
+
+    p
+        font-size: 20px
+        margin-bottom: 3rem
+
+    .button
+        font-size: 20px
+        padding: 0.5em 1em
+        background-color: $background
+        text-decoration: none
+        color: $font
+        border-radius: 15px 0 15px 0
+        transition: border-radius 0.2s ease-in-out
+
+        &:hover
+            border-radius: 0 15px 0 15px

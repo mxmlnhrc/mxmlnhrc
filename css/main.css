@@ -41,6 +41,11 @@ nav .logo {
   z-index: 1;
 }
 
+nav .logo a {
+  color: #FCFCFC;
+  text-decoration: none;
+}
+
 nav .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,7 +58,7 @@ nav .navbar {
 
 @media (max-width: 850px) {
   nav .navbar {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -95,6 +100,15 @@ nav .navbar a {
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
+  -webkit-transition: -webkit-text-decoration 0.2s ease-in-out;
+  transition: -webkit-text-decoration 0.2s ease-in-out;
+  transition: text-decoration 0.2s ease-in-out;
+  transition: text-decoration 0.2s ease-in-out, -webkit-text-decoration 0.2s ease-in-out;
+}
+
+nav .navbar a:hover {
+  -webkit-text-decoration: underline #FCFCFC;
+          text-decoration: underline #FCFCFC;
 }
 
 nav .navbar li {
@@ -114,6 +128,19 @@ nav .navbar li {
 nav .navbar .active {
   -webkit-text-decoration: underline #FCFCFC;
           text-decoration: underline #FCFCFC;
+}
+
+nav .navbar .button {
+  background-color: #FCFCFC;
+  color: #252c59;
+  padding: 0.5em 1em;
+  border-radius: 15px 0 15px 0;
+  -webkit-transition: border-radius 0.2s ease-in-out;
+  transition: border-radius 0.2s ease-in-out;
+}
+
+nav .navbar .button:hover {
+  border-radius: 0 15px 0 15px;
 }
 
 nav .nav-active {
@@ -157,5 +184,40 @@ nav .nav-active li {
   background: #fe4600;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #fe4600), to(#fdbf50));
   background: linear-gradient(180deg, #fe4600 10%, #fdbf50 100%);
+}
+
+.hero {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  top: 20vh;
+  color: #FCFCFC;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 3rem;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 3rem;
+}
+
+.hero .button {
+  font-size: 20px;
+  padding: 0.5em 1em;
+  background-color: #FCFCFC;
+  text-decoration: none;
+  color: #252c59;
+  border-radius: 15px 0 15px 0;
+  -webkit-transition: border-radius 0.2s ease-in-out;
+  transition: border-radius 0.2s ease-in-out;
+}
+
+.hero .button:hover {
+  border-radius: 0 15px 0 15px;
 }
 /*# sourceMappingURL=main.css.map */
