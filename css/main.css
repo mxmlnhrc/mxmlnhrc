@@ -356,4 +356,97 @@ nav .nav-active li {
     margin: 0 auto 2rem auto;
   }
 }
+
+@media (max-width: 600px) {
+  .about .text p {
+    margin-bottom: 5rem;
+  }
+}
+
+.plan {
+  position: relative;
+  top: 51vh;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  color: #252c59;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.plan .left {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  padding: 0 2.5rem 0 0.2rem;
+}
+
+@media (max-width: 600px) {
+  .plan .left {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+}
+
+.plan .right {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  padding: 0 2.5rem 0 0.2rem;
+}
+
+@media (max-width: 600px) {
+  .plan .right {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+}
+
+.plan .right h2 {
+  text-transform: uppercase;
+  color: #fe4600;
+  font-size: 18px;
+  margin-left: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.plan .right .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 600px) {
+  .plan .right .text {
+    display: inline;
+  }
+}
+
+.plan .right .text hr {
+  border: 1px solid;
+  color: #fe4600;
+  margin: 0 1rem 0 1rem;
+}
+
+@media (max-width: 600px) {
+  .plan .right .text hr {
+    width: 50%;
+    margin: 0 auto 2rem auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .plan .right .text h3 {
+    margin-bottom: 5rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
