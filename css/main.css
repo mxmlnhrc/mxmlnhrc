@@ -272,9 +272,30 @@ nav .nav-active li {
 .welcome .cards {
   display: -ms-grid;
   display: grid;
-  gap: 5rem;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 4rem;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: auto;
+}
+
+.welcome .cards .card {
+  margin: 1rem;
+  padding: 2rem;
+  background: #fcfcfc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#fff0e0));
+  background: linear-gradient(180deg, #fcfcfc 0%, #fff0e0 100%);
+  border-radius: 2em;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+}
+
+.welcome .cards .card img {
+  margin-bottom: 2rem;
+}
+
+.welcome .cards .card h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
