@@ -186,6 +186,13 @@ nav .nav-active li {
   background: linear-gradient(180deg, #fe4600 10%, #fdbf50 100%);
 }
 
+@media (max-width: 600px) {
+  .bg {
+    -webkit-clip-path: ellipse(100% 78% at 100% 10%);
+            clip-path: ellipse(100% 78% at 100% 10%);
+  }
+}
+
 .hero {
   width: 45%;
   margin-left: auto;
@@ -196,14 +203,39 @@ nav .nav-active li {
   color: #FCFCFC;
 }
 
+@media (max-width: 600px) {
+  .hero {
+    width: 90%;
+    top: 12vh;
+  }
+}
+
+@media (max-width: 850px) {
+  .hero {
+    width: 70%;
+  }
+}
+
 .hero h1 {
   font-size: 60px;
   margin-bottom: 3rem;
 }
 
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+}
+
 .hero p {
   font-size: 20px;
   margin-bottom: 3rem;
+}
+
+@media (max-width: 600px) {
+  .hero p {
+    font-size: 18px;
+  }
 }
 
 .hero .button {
@@ -215,6 +247,12 @@ nav .nav-active li {
   border-radius: 15px 0 15px 0;
   -webkit-transition: border-radius 0.2s ease-in-out;
   transition: border-radius 0.2s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .hero .button {
+    font-weight: 500;
+  }
 }
 
 .hero .button:hover {
