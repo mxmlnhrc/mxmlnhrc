@@ -262,6 +262,7 @@ nav .nav-active li {
   position: relative;
   top: 45vh;
   margin: auto;
+  color: #252c59;
 }
 
 .welcome h2 {
@@ -291,11 +292,68 @@ nav .nav-active li {
 
 .welcome .cards .card img {
   margin-bottom: 2rem;
+  width: 80px;
+  height: auto;
 }
 
 .welcome .cards .card h3 {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 2rem;
+}
+
+.welcome .cards .card p {
+  font-size: 18px;
+}
+
+.about {
+  position: relative;
+  top: 51vh;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  color: #252c59;
+}
+
+.about h2 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 40px;
+  color: #fe4600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .about h2 {
+    margin-bottom: 0;
+  }
+}
+
+.about .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 600px) {
+  .about .text {
+    display: inline;
+  }
+}
+
+.about .text hr {
+  border: 1px solid;
+  color: #fe4600;
+  margin: 0 1rem 0 1rem;
+}
+
+@media (max-width: 600px) {
+  .about .text hr {
+    width: 50%;
+    margin: 0 auto 2rem auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */

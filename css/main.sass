@@ -195,6 +195,7 @@ nav
     position: relative
     top: 45vh
     margin: auto
+    color: $font
 
     h2
         font-size: 40px
@@ -216,8 +217,49 @@ nav
 
         img
             margin-bottom: 2rem
+            width: 80px
+            height: auto
 
         h3
             font-size: 30px
             font-weight: 600
             margin-bottom: 2rem
+
+        p
+            font-size: 18px
+
+.about
+    position: relative
+    top: 51vh
+    width: 80%
+    max-width: 1200px
+    margin: auto
+    color: $font
+
+    h2
+        margin-top: 3rem
+        margin-bottom: 3rem
+        font-size: 40px
+        color: $primary
+        text-transform: uppercase
+        text-align: center
+
+        @include phone
+            margin-bottom: 0
+
+.about .text
+    display: flex
+    width: 100%
+    margin-bottom: 5rem
+
+    @include phone
+        display: inline
+
+    hr
+        border: 1px solid
+        color: $primary
+        margin: 0 1rem 0 1rem
+
+        @include phone
+            width: 50%
+            margin: 0 auto 2rem auto
