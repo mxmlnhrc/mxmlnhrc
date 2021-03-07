@@ -326,7 +326,7 @@ nav .nav-active li {
 
 @media (max-width: 600px) {
   .about h2 {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
 }
 
@@ -409,7 +409,7 @@ nav .nav-active li {
   }
 }
 
-.plan .right h2 {
+.plan .left h2 {
   text-transform: uppercase;
   color: #fe4600;
   font-size: 18px;
@@ -417,7 +417,7 @@ nav .nav-active li {
   margin-bottom: 2rem;
 }
 
-.plan .right .text {
+.plan .left .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,28 +425,21 @@ nav .nav-active li {
   margin-bottom: 5rem;
 }
 
-@media (max-width: 600px) {
-  .plan .right .text {
-    display: inline;
-  }
-}
-
-.plan .right .text hr {
+.plan .left .text hr {
   border: 1px solid;
   color: #fe4600;
   margin: 0 1rem 0 1rem;
+  padding: 1rem 0 1rem 0;
 }
 
-@media (max-width: 600px) {
-  .plan .right .text hr {
-    width: 50%;
-    margin: 0 auto 2rem auto;
-  }
+.plan .left .text h3 {
+  font-size: 35px;
 }
 
-@media (max-width: 600px) {
-  .plan .right .text h3 {
-    margin-bottom: 5rem;
-  }
+.plan .right .way {
+  margin: 1.5rem;
+  padding: 1.5rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FE460099), to(#FE46004D));
+  background: linear-gradient(to bottom right, #FE460099, #FE46004D);
 }
 /*# sourceMappingURL=main.css.map */

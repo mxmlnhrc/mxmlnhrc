@@ -245,7 +245,7 @@ nav
         text-align: center
 
         @include phone
-            margin-bottom: 0
+            margin-bottom: 1rem
 
 .about .text
     display: flex
@@ -291,7 +291,7 @@ nav
         @include phone
             flex: 100%
 
-.plan .right
+.plan .left
     h2
         text-transform: uppercase
         color: $primary
@@ -304,18 +304,19 @@ nav
         width: 100%
         margin-bottom: 5rem
 
-        @include phone
-            display: inline
-
         hr
             border: 1px solid
             color: $primary
             margin: 0 1rem 0 1rem
-
-            @include phone
-                width: 50%
-                margin: 0 auto 2rem auto
+            padding: 1rem 0 1rem 0
 
         h3
-            @include phone
-                margin-bottom: 5rem
+            font-size: 35px
+
+.plan .right
+    .way
+        margin: 1.5rem
+        padding: 1.5rem
+        background: -webkit-linear-gradient(top left, #FE460099, #FE46004D)
+        background: -moz-linear-gradient(top left, #FE460099, #FE46004D)
+        background: linear-gradient(to bottom right, #FE460099, #FE46004D)
