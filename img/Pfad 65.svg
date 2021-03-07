@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="773.421" height="450.551" viewBox="0 0 773.421 450.551">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fe4600"/>
+      <stop offset="1" stop-color="#fdbf50"/>
+    </linearGradient>
+  </defs>
+  <path id="Pfad_65" data-name="Pfad 65" class="cls-1" d="M99.62,3498.573c-.753-107.726,21.77-168.2,142.315-211.891s479.127,59.3,612.744,234.029-502.805,231.551-614.285,196.763S100.374,3606.3,99.62,3498.573Z" transform="translate(-99.602 -3276.658)"/>
+</svg>
