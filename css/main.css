@@ -439,6 +439,7 @@ nav .nav-active li {
 .plan .left .way {
   position: relative;
   margin: 1.5rem;
+  margin-bottom: 3rem;
   padding: 1.5rem;
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(254, 70, 0, 0.6)), to(rgba(254, 70, 0, 0.302)));
   background: linear-gradient(to bottom right, rgba(254, 70, 0, 0.6), rgba(254, 70, 0, 0.302));
@@ -446,6 +447,18 @@ nav .nav-active li {
 
 .plan .left .way .number {
   position: absolute;
-  top: 0;
+  background: #252c59;
+  color: #FCFCFC;
+  padding: 0.8rem;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .plan .left .way .number {
+    top: -15%;
+    left: 33%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
