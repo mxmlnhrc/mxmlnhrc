@@ -276,14 +276,8 @@ nav
     margin: auto
     color: $font
     display: flex
-    flex-wrap: wrap
+    flex-wrap: wrap-reverse
     justify-content: space-around
-
-    .left
-        flex: 50%
-        padding: 0 2.5rem 0 0.2rem
-        @include phone
-            flex: 100%
 
     .right
         flex: 50%
@@ -291,7 +285,13 @@ nav
         @include phone
             flex: 100%
 
-.plan .left
+    .left
+        flex: 50%
+        padding: 0 2.5rem 0 0.2rem
+        @include phone
+            flex: 100%
+
+.plan .right
     h2
         text-transform: uppercase
         color: $primary
@@ -313,10 +313,14 @@ nav
         h3
             font-size: 35px
 
-.plan .right
+.plan .left
     .way
+        position: relative
         margin: 1.5rem
         padding: 1.5rem
-        background: -webkit-linear-gradient(top left, #FE460099, #FE46004D)
-        background: -moz-linear-gradient(top left, #FE460099, #FE46004D)
-        background: linear-gradient(to bottom right, #FE460099, #FE46004D)
+        background: linear-gradient(to bottom right, rgba(254, 70, 0, 0.6), rgba(254, 70, 0, 0.302))
+
+        .number
+            position: absolute
+            top: 0
+            left:
