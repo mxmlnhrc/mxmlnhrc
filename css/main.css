@@ -440,13 +440,17 @@ nav .nav-active li {
   position: relative;
   margin: 1.5rem;
   margin-bottom: 3rem;
-  padding: 1.5rem;
+  padding: 2rem;
+  padding-left: 2.5rem;
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(254, 70, 0, 0.6)), to(rgba(254, 70, 0, 0.302)));
   background: linear-gradient(to bottom right, rgba(254, 70, 0, 0.6), rgba(254, 70, 0, 0.302));
 }
 
 .plan .left .way .number {
   position: absolute;
+  height: auto;
+  top: 25%;
+  left: -5%;
   background: #252c59;
   color: #FCFCFC;
   padding: 0.8rem;
