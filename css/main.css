@@ -178,8 +178,8 @@ nav .nav-active li {
   -webkit-clip-path: ellipse(86% 60% at 75% 18%);
           clip-path: ellipse(86% 60% at 75% 18%);
   background: #fe4600;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #fe4600), to(#fdbf50));
-  background: linear-gradient(180deg, #fe4600 10%, #fdbf50 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #fe4600), color-stop(75%, #fdbf50));
+  background: linear-gradient(180deg, #fe4600 10%, #fdbf50 75%);
 }
 
 @media (max-width: 600px) {
@@ -442,8 +442,8 @@ nav .nav-active li {
   margin-bottom: 3rem;
   padding: 2rem;
   padding-left: 2.5rem;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(254, 70, 0, 0.6)), to(rgba(254, 70, 0, 0.302)));
-  background: linear-gradient(to bottom right, rgba(254, 70, 0, 0.6), rgba(254, 70, 0, 0.302));
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(254, 70, 0, 0.4)), to(rgba(254, 70, 0, 0.2)));
+  background: linear-gradient(to bottom right, rgba(254, 70, 0, 0.4), rgba(254, 70, 0, 0.2));
 }
 
 .plan .left .way .number {
