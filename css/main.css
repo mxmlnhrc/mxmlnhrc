@@ -468,6 +468,8 @@ nav .nav-active li {
 
 .kontakt {
   position: relative;
-  top: 51vh;
+  top: 60vh;
+  margin: auto;
+  max-width: 80%;
 }
 /*# sourceMappingURL=main.css.map */

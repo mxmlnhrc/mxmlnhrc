@@ -108,12 +108,31 @@
 
     <section class="kontakt">
         <div class="left">
-            <picture></picture>
+            <picture>
+                <source media="(max-width: 600px)" srcset="img/Kontakt_klein.svg" style="width:100;">
+                <img src="img/Kontakt_groß.svg" style="width:auto;">
+            </picture>
             <div class="content">
                 <h2>Lassen Sie uns zusammen arbeiten</h2>
                 <p>um ihren Traum wahr werden zu lassen.</p>
                 <span><a href="mailto:maximilian.henrici@gmail.com">maximilian.henrici@gmail.com</a></span>
             </div>
+        </div>
+        <div class="right">
+            <h2></h2>
+            <form action="" method="post">
+                <label for="vorname">Vorname</label>
+                <input type="text" name="vorname" id="">
+                <label for="nachname">Nachname</label>
+                <input type="text" name="nachname" id="">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="">
+                <input type="tel" name="telefonnummer" id="">
+                <input type="text" name="nachricht" id="">
+                <button type="submit" vlaue="Absenden">
+                    <span></span>
+                </button>
+            </form>
         </div>
     </section>
 
