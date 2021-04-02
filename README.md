@@ -1,4 +1,5 @@
-### Hi there 👋
+## Hello, I'm Maximilian 👋
+### Nice to meet you
 
 <!--
 **mxmlnhrc/mxmlnhrc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
