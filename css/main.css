@@ -514,23 +514,28 @@ nav .nav-active li {
   background: linear-gradient(to bottom, #FF4701, #FBBB4A);
   color: #FCFCFC;
   max-width: 500px;
+  width: 100%;
 }
 
 .kontakt .left .content h2 {
   font-size: 30px;
-  margin-right: 1rem;
-  padding-left: 1rem;
+  padding: 1rem 2rem 0.5rem 1rem;
 }
 
 .kontakt .left .content p {
   font-size: 20px;
   margin-left: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.kontakt .left .content span {
+  margin: 2rem 3rem 2rem 2rem;
 }
 
 .kontakt .left .content span a {
   color: #FCFCFC;
   font-size: 15px;
-  padding-left: 1rem;
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */
