@@ -501,4 +501,9 @@ nav .nav-active li {
           flex: 60%;
   padding: 2rem;
 }
+
+.kontakt .left .content {
+  padding: 2rem;
+  background: line;
+}
 /*# sourceMappingURL=main.css.map */
