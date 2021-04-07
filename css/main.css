@@ -379,6 +379,14 @@ nav .nav-active li {
       justify-content: space-around;
 }
 
+@media (max-width: 600px) {
+  .plan {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .plan .right {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
@@ -476,5 +484,17 @@ nav .nav-active li {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.kontakt .left {
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+}
+
+.kontakt .right {
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
 }
 /*# sourceMappingURL=main.css.map */
