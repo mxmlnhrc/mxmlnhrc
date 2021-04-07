@@ -504,6 +504,7 @@ nav .nav-active li {
 
 .kontakt .left .content {
   padding: 2rem;
-  background: line;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF4701), to(#FBBB4A));
+  background: linear-gradient(to bottom, #FF4701, #FBBB4A);
 }
 /*# sourceMappingURL=main.css.map */
