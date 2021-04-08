@@ -495,16 +495,16 @@ nav .nav-active li {
 }
 
 .kontakt .left {
-  -webkit-box-flex: 40%;
-      -ms-flex: 40%;
-          flex: 40%;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
   padding: 2rem;
 }
 
 .kontakt .right {
-  -webkit-box-flex: 60%;
-      -ms-flex: 60%;
-          flex: 60%;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
   padding: 2rem;
 }
 
