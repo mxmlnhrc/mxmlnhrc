@@ -540,16 +540,36 @@ nav .nav-active li {
 }
 
 .kontakt .right {
+  display: block;
   text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 .kontakt .right .container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  margin: 10px;
+  text-align: left;
+}
+
+.kontakt .right .container label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.kontakt .right .container .input {
+  font-size: 16px;
+  width: 100%;
+  padding: 0.2rem;
+  margin: 0.6rem 0;
+  border: 0;
+  border-bottom: 3px solid rgba(37, 44, 89, 0.5);
+}
+
+.kontakt .right .container .input:focus {
+  font-size: 16px;
+  outline: none;
+  border-bottom: 3px solid #252c59;
 }
 /*# sourceMappingURL=main.css.map */
