@@ -116,26 +116,30 @@
         </div>
         <div class="right">
             <h2>Kontaktieren Sie mich</h2>
-            <form action="" method="post">
+            <form action="https://formsubmit.co/maximilian.henrici@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Request from your website!">
                 <div class="container">
                     <label for="vorname">Vorname</label>
-                    <input placeholder="Ihr Vorname" type="text" name="vorname" id="vorname" class="input">
+                    <input placeholder="Ihr Vorname" type="text" name="vorname" id="vorname" class="input" required>
                 </div>
+                <input type="text" name="_honey" style="display:none">
                 <div class="container">
                     <label for="nachname">Nachname</label>
-                    <input placeholder="Ihr Nachname" type="text" name="nachname" id="nachname" class="input">
+                    <input placeholder="Ihr Nachname" type="text" name="nachname" id="nachname" class="input" required>
                 </div>
                 <div class="container">
                     <label for="email">Email</label>
-                    <input placeholder="Ihre Emailadresse" type="email" name="email" id="email" class="input">
+                    <input placeholder="Ihre Emailadresse" type="email" name="email" id="email" class="input" required>
                 </div>
                 <div class="container">
                     <label for="nachricht">Nachricht</label>
-                    <textarea placeholder="Ihre Nachricht" name="nachricht" rows="4" id="nachricht"
-                        class="input"></textarea>
+                    <textarea placeholder="Ihre Nachricht" name="nachricht" rows="4" id="nachricht" class="input"
+                        required></textarea>
                 </div>
-                <button type="submit" value="Absenden">
-                    <span>Absenden</span>
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                <button type="submit" value="Absenden" class="submit">
+                    <span>Absenden <span id="arrow">&#8594;</span></span>
                 </button>
             </form>
         </div>

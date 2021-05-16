@@ -541,14 +541,14 @@ nav .nav-active li {
 
 .kontakt .right {
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 .kontakt .right .container {
   display: block;
   width: 100%;
   font-size: 20px;
-  margin: 2rem;
+  margin: 2rem 0;
   text-align: left;
 }
 
@@ -579,5 +579,29 @@ nav .nav-active li {
   height: 72px;
   -webkit-transition: height 0.5s linear;
   transition: height 0.5s linear;
+}
+
+.kontakt .right .submit {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: rgba(255, 255, 255, 0);
+  font-size: 18px;
+}
+
+.kontakt .right .submit #arrow {
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 10px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.kontakt .right .submit:hover {
+  cursor: pointer;
+}
+
+.kontakt .right .submit:hover #arrow {
+  padding-left: 15px;
 }
 /*# sourceMappingURL=main.css.map */
