@@ -392,7 +392,7 @@ nav
         display: block
         width: 100%
         font-size: 20px
-        margin: 10px
+        margin: 2rem
         text-align: left
 
         label
@@ -401,14 +401,19 @@ nav
             font-size: 14px
 
         .input
-            font-size: 16px
+            font-size: 18px
             width: 100%
             padding: 0.2rem
             margin: 0.6rem 0
             border: 0
             border-bottom: 3px solid rgba($font, 0.5)
+            transition: border-bottom 0.1s ease-in-out
 
             &:focus
-                font-size: 16px
+                font-size: 18px
                 outline: none
                 border-bottom: 3px solid rgba($font, 1)
+
+        #nachricht
+            height: 72px
+            transition: height 0.5s linear

@@ -548,7 +548,7 @@ nav .nav-active li {
   display: block;
   width: 100%;
   font-size: 20px;
-  margin: 10px;
+  margin: 2rem;
   text-align: left;
 }
 
@@ -559,17 +559,25 @@ nav .nav-active li {
 }
 
 .kontakt .right .container .input {
-  font-size: 16px;
+  font-size: 18px;
   width: 100%;
   padding: 0.2rem;
   margin: 0.6rem 0;
   border: 0;
   border-bottom: 3px solid rgba(37, 44, 89, 0.5);
+  -webkit-transition: border-bottom 0.1s ease-in-out;
+  transition: border-bottom 0.1s ease-in-out;
 }
 
 .kontakt .right .container .input:focus {
-  font-size: 16px;
+  font-size: 18px;
   outline: none;
   border-bottom: 3px solid #252c59;
+}
+
+.kontakt .right .container #nachricht {
+  height: 72px;
+  -webkit-transition: height 0.5s linear;
+  transition: height 0.5s linear;
 }
 /*# sourceMappingURL=main.css.map */
