@@ -17,6 +17,7 @@ body {
 }
 
 nav {
+  margin: 0;
   z-index: 10;
   position: fixed;
   width: 100%;
@@ -480,7 +481,8 @@ nav .nav-active li {
   position: relative;
   top: 60vh;
   margin: auto;
-  max-width: 80%;
+  max-width: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,16 +497,16 @@ nav .nav-active li {
 }
 
 .kontakt .left {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 2rem;
 }
 
 .kontakt .right {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 2rem;
 }
 
@@ -515,6 +517,12 @@ nav .nav-active li {
   color: #FCFCFC;
   max-width: 500px;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  .kontakt .left .content {
+    padding: 2rem 1rem;
+  }
 }
 
 .kontakt .left .content h2 {
@@ -530,7 +538,7 @@ nav .nav-active li {
 }
 
 .kontakt .left .content span {
-  margin: 2rem 3rem 2rem 2rem;
+  margin: 1rem 3rem 2rem 2rem;
 }
 
 .kontakt .left .content span a {

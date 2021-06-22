@@ -34,6 +34,7 @@ body
         overflow-x: hidden
 
 nav
+    margin: 0
     z-index: 10
     position: fixed
     width: 100%
@@ -346,18 +347,19 @@ nav
     position: relative
     top: 60vh
     margin: auto
-    max-width: 80%
+    max-width: 100%
+    width: 100%
     display: flex
     flex-wrap: wrap
     justify-content: center
     align-items: center
 
     .left
-        flex: 50%
+        flex: 1
         padding: 2rem
 
     .right
-        flex: 50%
+        flex: 1
         padding: 2rem
 
 .kontakt .left .content
@@ -366,6 +368,9 @@ nav
     color: $background
     max-width: 500px
     width: 100%
+
+    @include phone
+        padding: 2rem 1rem
 
     h2
         font-size: 30px
@@ -378,7 +383,7 @@ nav
         font-weight: 500
 
     span
-        margin: 2rem 3rem 2rem 2rem
+        margin: 1rem 3rem 2rem 2rem
         a
             color: $background
             font-size: 15px
