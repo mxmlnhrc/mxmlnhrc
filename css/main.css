@@ -590,11 +590,14 @@ nav .nav-active li {
 }
 
 .kontakt .right .submit {
-  padding: 0;
+  padding: 0.5rem;
   margin: 0;
   border: none;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(252, 252, 252, 0);
   font-size: 18px;
+  color: #252c59;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .kontakt .right .submit #arrow {
@@ -607,6 +610,8 @@ nav .nav-active li {
 
 .kontakt .right .submit:hover {
   cursor: pointer;
+  color: #FCFCFC;
+  background: #252c59;
 }
 
 .kontakt .right .submit:hover #arrow {
