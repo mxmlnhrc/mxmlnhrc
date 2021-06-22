@@ -500,18 +500,18 @@ nav .nav-active li {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .kontakt .right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .kontakt .left .content {
-  padding: 2rem;
+  padding: 3rem 2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF4701), to(#FBBB4A));
   background: linear-gradient(to bottom, #FF4701, #FBBB4A);
   color: #FCFCFC;
