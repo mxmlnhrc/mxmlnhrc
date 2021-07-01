@@ -510,6 +510,11 @@ nav .nav-active li {
   padding: 3rem;
 }
 
+.kontakt .left {
+  margin: 0 1rem;
+  padding: 0;
+}
+
 .kontakt .left .content {
   padding: 3rem 2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF4701), to(#FBBB4A));
