@@ -633,14 +633,35 @@ footer {
   bottom: 0;
   width: 90%;
   color: #252c59;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer p {
+  width: 100%;
 }
 
 footer span {
   margin: 0.5rem;
 }
 
+@media (max-width: 600px) {
+  footer span {
+    min-width: 100%;
+    float: left;
+  }
+}
+
 footer .link {
-  margin: 0.5rem;
   color: #252c59;
   opacity: 0.8;
   text-decoration: none;
