@@ -631,6 +631,25 @@ footer {
   margin: auto;
   padding: 2rem;
   bottom: 0;
-  width: 100%;
+  width: 90%;
+  color: #252c59;
+}
+
+footer span {
+  margin: 0.5rem;
+}
+
+footer .link {
+  margin: 0.5rem;
+  color: #252c59;
+  opacity: 0.8;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+footer .link:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */
