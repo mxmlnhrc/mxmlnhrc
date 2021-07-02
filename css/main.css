@@ -622,4 +622,15 @@ nav .nav-active li {
 .kontakt .right .submit:hover #arrow {
   padding-left: 15px;
 }
+
+footer {
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+  top: 60vh;
+  margin: auto;
+  padding: 2rem;
+  bottom: 0;
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
