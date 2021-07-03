@@ -701,4 +701,63 @@ footer .link:hover {
 .datenschutz p {
   margin: 1rem 0;
 }
+
+.impressum {
+  width: 80%;
+  color: #252c59;
+  position: relative;
+  top: 8.5rem;
+  margin: auto;
+  font-size: 15px;
+}
+
+.impressum h1 {
+  font-size: 35px;
+  margin-bottom: 1rem;
+}
+
+.impressum h2 {
+  font-size: 25px;
+  margin-bottom: 0.5rem;
+}
+
+.impressum h3 {
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+
+.impressum ul li {
+  padding: 0.4rem;
+}
+
+.impressum ul li a {
+  color: #252c59;
+}
+
+.impressum p {
+  margin: 1rem 0;
+}
+
+.offizell {
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+  top: 9rem;
+  margin: auto;
+  padding: 2rem;
+  bottom: 0;
+  width: 90%;
+  color: #252c59;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 /*# sourceMappingURL=main.css.map */
