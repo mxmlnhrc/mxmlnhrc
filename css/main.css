@@ -679,5 +679,24 @@ footer .link:hover {
   color: #252c59;
   position: relative;
   top: 8.5rem;
+  margin: auto;
+  font-size: 15px;
+}
+
+.datenschutz h1 {
+  font-size: 35px;
+  margin-bottom: 1rem;
+}
+
+.datenschutz h2 {
+  font-size: 25px;
+}
+
+.datenschutz h3 {
+  font-size: 18px;
+}
+
+.datenschutz p {
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=main.css.map */
