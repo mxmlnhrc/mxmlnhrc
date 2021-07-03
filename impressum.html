@@ -1091,6 +1091,15 @@
                 href="https://www.adsimple.de/datenschutz-generator/">Datenschutz Generator</a> von AdSimple</p>
     </section>
 
+    <div class="cookie-banner" id="banner">
+        <p>Meine Website benutzt Cookies, mehr Erfahren Sie beim <a href="impressum.html#cookies">Datenschutz</a>.</p>
+        <p>In dem Sie allem Cookies zustimmen, stimmen Sie zu das ihre Daten verarbeitet und analysiert werden dürfen..
+        </p>
+        <div class="buttons"><button onclick="akzeptieren()">Alle Akzeptieren</button> <button onclick="ablehnen()">Nur
+                Funktional</button></div>
+
+    </div>
+
     <footer class="offizell">
         <p>
             <span><a href="impressum.html" class="link">Impressum</a></span>
@@ -1102,6 +1111,41 @@
     </footer>
 
     <script src="js/main.js"></script>
+
+    <!-- cookie Script -->
+    <script>
+        var currentURL = window.location.href;
+        var cookiePermission = getCookie("CookiePermission");
+        var banner = document.getElementById("banner");
+
+        function setCookie(permission) {
+            var cookiePremission = "CookiePermission=" + permission;
+
+            // set a cookie
+            document.cookie = cookiePremission;
+        }
+
+        function akzeptieren() {
+            setCookie("full");
+
+            // redirect to the current URl with permission for Tracking
+            location.replace(currentURL);
+        }
+
+        function ablehnen() {
+            setCookie("necessary");
+
+            // redirect to the current URl without permission for Tracking
+            location.replace(currentURL);
+        }
+
+        if (cookiePermission == "full" || cookiePermission == "necessary") {
+            console.log(cookiePermission);
+            banner.style.display = "none";
+        }
+
+    </script>
+
 </body>
 
 </html>
