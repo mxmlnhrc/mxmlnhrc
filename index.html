@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="css/main.css">
 
     <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDTF1QX7WS"></script>
     <script>
         var cookiePermission = getCookie("CookiePermission");
 
@@ -47,7 +49,15 @@
         }
 
         if (cookiePermission === "full") {
-            console.log("Okay");
+            console.log("Google Analytics aktiv.");
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-MDTF1QX7WS');
         }
 
     </script>
@@ -262,7 +272,6 @@
         }
 
         if (cookiePermission == "full" || cookiePermission == "necessary") {
-            console.log(cookiePermission);
             banner.style.display = "none";
         }
 
