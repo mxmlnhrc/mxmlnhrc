@@ -9,6 +9,31 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Datenschutz - Maximilian Henrici</title>
     <meta name="author" content="Maximilian Henrici">
+
+    <script>
+        var cookiePermission = getCookie("CookiePermission");
+
+        function getCookie(cookieName) {
+            var cookieArr = document.cookie.split(";");
+
+            for (var i = 0; i < cookieArr.length; i++) {
+                var cookiePair = cookieArr[i].split("=");
+
+                /* Removing whitespace at the beginning of the cookie name
+                and compare it with the given string */
+                if (cookieName == cookiePair[0].trim()) {
+                    // Decode the cookie value and return
+                    return decodeURIComponent(cookiePair[1]);
+                }
+            }
+            return null;
+        }
+
+        if (cookiePermission === "full") {
+
+        }
+
+    </script>
 </head>
 
 <body style=" overflow-x: hidden;">
