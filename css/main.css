@@ -673,4 +673,11 @@ footer .link:hover {
   opacity: 1;
   text-decoration: underline;
 }
+
+.datenschutz {
+  width: 80%;
+  color: #252c59;
+  position: relative;
+  top: 8.5rem;
+}
 /*# sourceMappingURL=main.css.map */
