@@ -171,11 +171,11 @@
         </div>
     </section>
 
-    <div class="cookie">
+    <div class="cookie-banner">
         <p>Meine Website benutzt Cookies, mehr Erfahren Sie beim <a href="impressum.html#cookies">Datenschutz</a>.</p>
         <p>Akzeptieren Sie alle oder nur die Funktionallen Cookies. Wenn Sie alle Cookies akzeptieren stimmen Sie zu das
             ihre Daten an Google Analytics weiter geleitet werden.</p>
-        <button onclick="akzeptieren">Alle Akzeptieren</button> <button onclick="ablehnen">Nur Funktional</button>
+        <button onclick="akzeptieren()">Alle Akzeptieren</button> <button onclick="ablehnen()">Nur Funktional</button>
     </div>
 
     <footer>
@@ -192,8 +192,47 @@
 
     <script>
         var currentURL = window.location.href;
+        var cookiePermission = getCookie("CookiePermission");
+        var banner = document.getElementById("cookie-banner")
+
+        function setCookie(permission) {
+            var cookiePremission = "CookiePermission=" + permission;
+
+            // set a cookie
+            document.cookie = cookiePremission;
+        }
+
+        function getCookie(cookieName) {
+            var cookieArr = document.cookie.split(";");
+
+            for (var i = 0; i < cookieArr.length; i++) {
+                var cookiePair = cookieArr[i].split("=");
+
+                /* Removing whitespace at the beginning of the cookie name
+                and compare it with the given string */
+                if (cookieName == cookiePair[0].trim()) {
+                    // Decode the cookie value and return
+                    return decodeURIComponent(cookiePair[1]);
+                }
+            }
+            return null;
+        }
 
         function akzeptieren() {
+            setCookie("full");
+
+            // redirect to the current URl with permission for Tracking
+            location.replace(currentURL);
+        }
+
+        function ablehnen() {
+            setCookie("necessary");
+
+            // redirect to the current URl without permission for Tracking
+            location.replace(currentURL);
+        }
+
+        if (cookiePermission == "full" || cookiePermission == "necessary") {
 
         }
 
