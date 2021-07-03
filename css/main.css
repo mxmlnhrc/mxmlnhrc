@@ -784,4 +784,12 @@ footer .link:hover {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+
+.cookie {
+  position: fixed;
+  bottom: 0;
+  padding: 2rem;
+  width: 100%;
+  background: #e14f36;
+}
 /*# sourceMappingURL=main.css.map */
