@@ -489,15 +489,20 @@ footer
 
 .datenschutz
     width: 80%
+    max-width: 90%
     color: $font
     position: relative
     top: 8.5rem
     margin: auto
     font-size: 15px
+    overflow-wrap: anywhere
 
     h1
         font-size: 35px
         margin-bottom: 1rem
+
+        @include phone
+            font-size: 28px
 
     h2
         font-size: 25px
@@ -519,15 +524,20 @@ footer
 
 .impressum
     width: 80%
+    max-width: 90%
     color: $font
     position: relative
     top: 8.5rem
     margin: auto
     font-size: 15px
+    overflow-wrap: anywhere
 
     h1
         font-size: 35px
         margin-bottom: 1rem
+
+        @include phone
+            font-size: 28px
 
     h2
         font-size: 25px
@@ -546,6 +556,7 @@ footer
 
     p
         margin: 1rem 0
+
 
 .offizell
     text-align: center

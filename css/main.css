@@ -676,16 +676,24 @@ footer .link:hover {
 
 .datenschutz {
   width: 80%;
+  max-width: 90%;
   color: #252c59;
   position: relative;
   top: 8.5rem;
   margin: auto;
   font-size: 15px;
+  overflow-wrap: anywhere;
 }
 
 .datenschutz h1 {
   font-size: 35px;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .datenschutz h1 {
+    font-size: 28px;
+  }
 }
 
 .datenschutz h2 {
@@ -712,16 +720,24 @@ footer .link:hover {
 
 .impressum {
   width: 80%;
+  max-width: 90%;
   color: #252c59;
   position: relative;
   top: 8.5rem;
   margin: auto;
   font-size: 15px;
+  overflow-wrap: anywhere;
 }
 
 .impressum h1 {
   font-size: 35px;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .impressum h1 {
+    font-size: 28px;
+  }
 }
 
 .impressum h2 {
