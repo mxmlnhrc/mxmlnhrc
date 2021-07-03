@@ -786,10 +786,43 @@ footer .link:hover {
 }
 
 .cookie-banner {
+  z-index: 3;
   position: fixed;
   bottom: 0;
   padding: 2rem;
   width: 100%;
-  background: #e14f36;
+  background: linear-gradient(45deg, #fe4800d0 0%, #fdbe50c0 100%);
+  color: #252c59;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.cookie-banner .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.cookie-banner .buttons button {
+  background: #fe4600;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1rem 1.5rem;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.cookie-banner .buttons button:nth-of-type(2) {
+  background: none;
+}
+
+.cookie-banner .buttons button:hover {
+  cursor: pointer;
+  background: #FCFCFC;
+  border-radius: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */
