@@ -23,6 +23,7 @@
     <meta name="revisit-after" content="2 days" />
     <title>Maximilian Henrici - Ihr online Auftritt</title>
 
+
     <!-- link styles -->
     <link rel="stylesheet" href="css/main.css">
 
@@ -252,9 +253,12 @@
 
         function setCookie(permission) {
             var cookiePremission = "CookiePermission=" + permission;
+            const d = new Date();
+            d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
 
             // set a cookie
-            document.cookie = cookiePremission;
+            document.cookie = cookiePremission + ";" + "expires=" + "expires";
         }
 
         function akzeptieren() {
