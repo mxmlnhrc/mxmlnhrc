@@ -1146,9 +1146,12 @@
 
         function setCookie(permission) {
             var cookiePremission = "CookiePermission=" + permission;
+            const d = new Date();
+            d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
 
             // set a cookie
-            document.cookie = cookiePremission;
+            document.cookie = cookiePremission + ";" + "expires=" + expires + ";";
         }
 
         function akzeptieren() {
