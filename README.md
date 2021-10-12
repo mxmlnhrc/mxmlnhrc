@@ -15,8 +15,6 @@ class Skills(Me):
   languages = ['Python', 'C#', 'JavaScript', 'HTML', 'CSS']
   databases = ['MySQL', 'sqlite3']
   tools = ['django', 'React', 'AWS']
-  
-  challenge = "My challenge for 2021 is to work on my skills, finish High-School and contribute to projects"
 ```
 
 </br> </br>
