@@ -8,15 +8,12 @@ from Developer import Me
 
 class Bio(Me):
   name = 'Maximilian'
-  employee_status = ['Studend', 'Freelancer']
-  location = 'Berlin'
+  employee_status = ['Studend', 'Deloitte']
+  location = 'Stuttgart/Berlin'
   
 class Skills(Me):
-  languages = ['Python', 'C#', 'JavaScript', 'HTML', 'CSS']
-  databases = ['MySQL', 'sqlite3']
+  languages = ['Python', 'C#', 'JavaScript', 'HTML', 'CSS', 'Java']
+  databases = ['MySQL', 'sqlite3', 'PostgresDB']
   tools = ['django', 'React', 'AWS']
 ```
 
-</br> </br>
-
-[![My Github Stats](https://github-readme-stats.vercel.app/api?username=mxmlnhrc&show_icons=true)](https://github.com/mxmlnhrc) ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mxmlnhrc&show_icons=true)
