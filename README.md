@@ -9,7 +9,7 @@ from Developer import Me
 class Bio(Me):
   name = 'Maximilian'
   employee_status = ['Studend', 'Deloitte']
-  location = 'Stuttgart/Berlin'
+  location = 'Berlin/Stuttgart'
   
 class Skills(Me):
   languages = ['Python', 'C#', 'JavaScript', 'HTML', 'CSS', 'Java']
